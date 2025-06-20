@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Streamings</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+    .container {
+      padding: 20px;
+    }
+    .item {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .item h3 {
+      margin: 0 0 10px;
+    }
+    .item p {
+      margin: 5px 0;
+    }
+    .btn-whatsapp {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      header { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>Central Streamings</header>
+  <div class="container"><!-- BLOCO GERADO AUTOMATICAMENTE COM TODOS OS PLANOS --><script>
+  const planos = [
+    ["GLOBO PLAY + COMBATE", "R$25,00"],
+    ["GLOBO PLAY + PREMIER (SEM CANAIS)", "R$28,00"],
+    ["GLOBO PLAY COM CANAIS AO VIVO", "R$21,00"],
+    ["GLOBO PLAY COM CANAIS + TELECINE", "R$22,00"],
+    ["SKY+ (SEM ADICIONAL) - Mensal", "R$17,00"],
+    ["SKY+ (SEM ADICIONAL) - Anual", "R$35,00"],
+    ["SKY+ (COM PREMIER) - Mensal", "R$25,00"],
+    ["UOL PLAY - Mensal", "R$15,00"],
+    ["UOL PLAY - Anual", "R$35,00"],
+    ["DEEZER PREMIUM Individual - Mensal", "R$17,00"],
+    ["DEEZER PREMIUM Individual - Anual", "R$35,00"],
+    ["AUDIMO - Mensal", "R$15,00"],
+    ["AUDIMO - Anual", "R$35,00"],
+    ["KINDLE UNLIMITED - Mensal", "R$17,00"],
+    ["KINDLE UNLIMITED - Anual", "R$30,00"],
+    ["SCRIBD - Mensal", "R$17,00"],
+    ["SCRIBD - Anual", "R$35,00"],
+    ["12 MIN - Mensal", "R$15,00"],
+    ["12 MIN - Anual", "R$35,00"],
+    ["AMAZON MUSIC - Mensal", "R$18,00"],
+    ["AMAZON MUSIC - Anual", "R$35,00"],
+    ["VIKI PASS - Mensal", "R$17,00"],
+    ["VIKI PASS - Anual", "R$30,00"],
+    ["CALM - Mensal", "R$15,00"],
+    ["CALM - Anual", "R$25,00"],
+    ["NORD VPN - Mensal", "R$15,00"],
+    ["NORD VPN - Anual", "R$30,00"],
+    ["DISCOVERY - Mensal", "R$15,00"],
+    ["DISCOVERY - Anual", "R$30,00"],
+    ["DISNEY PLUS (Tela – Plano padrão) - Mensal", "R$20,00"],
+    ["YOUTUBE PREMIUM 1 Pessoa - Mensal", "R$15,00"],
+    ["YOUTUBE PREMIUM 1 Pessoa - Anual", "R$30,00"],
+    ["YOUTUBE PREMIUM Família - Mensal", "R$25,00"],
+    ["YOUTUBE PREMIUM Família - Anual", "R$65,00"],
+    ["SPOTIFY 1 Pessoa - Mensal", "R$15,00"],
+    ["SPOTIFY 1 Pessoa - Anual", "R$30,00"],
+    ["SPOTIFY Família - Mensal", "R$25,00"],
+    ["SPOTIFY Família - Anual", "R$60,00"],
+    ["AMAZON PRIME VIDEO - Mensal", "R$15,00"],
+    ["AMAZON PRIME VIDEO - Anual", "R$30,00"],
+    ["HBO MAX - Mensal", "R$15,00"],
+    ["HBO MAX - Anual", "R$30,00"],
+    ["PARAMOUNT+ - Mensal", "R$15,00"],
+    ["PARAMOUNT+ - Anual", "R$30,00"],
+    ["DAZN - Mensal", "R$15,00"],
+    ["DAZN - Anual", "R$30,00"],
+    ["HMA VPN - Mensal", "R$15,00"],
+    ["HMA VPN - Anual", "R$30,00"],
+    ["CANVA PRO - Mensal", "R$17,00"],
+    ["CANVA PRO - Anual", "R$35,00"],
+    ["DUOLINGO PLUS - Mensal", "R$15,00"],
+    ["DUOLINGO PLUS - Anual", "R$30,00"],
+    ["TIDAL HIFI+ - Mensal", "R$15,00"],
+    ["TIDAL HIFI+ - Anual", "R$30,00"],
+    ["PLAY PLUS - Mensal", "R$15,00"],
+    ["PLAY PLUS - Anual", "R$30,00"],
+    ["CRUNCHYROLL - Mensal", "R$15,00"],
+    ["CRUNCHYROLL - Anual", "R$30,00"],
+    ["FUNIMATION - Mensal", "R$19,00"],
+    ["FUNIMATION - Anual", "R$30,00"],
+    ["UFC FIGHT PASS - Mensal", "R$17,00"],
+    ["UFC FIGHT PASS - Anual", "R$35,00"],
+    ["NBA LEAGUE PASS - Mensal", "R$17,00"],
+    ["NBA LEAGUE PASS - Anual", "R$35,00"]
+  ];
+
+  planos.forEach(([nome, preco]) => {
+    document.write(`
+      <div class="item">
+        <h3>${nome}</h3>
+        <p>${preco}</p>
+        <a class="btn-whatsapp" href="https://wa.me/5515997348409?text=Olá! Tenho interesse em comprar ${encodeURIComponent(nome)} por ${encodeURIComponent(preco)}." target="_blank">Comprar no WhatsApp</a>
+      </div>
+    `);
+  });
+</script>  </div>
+</body>
+</html>
